@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from "react-router-dom";
+import CompassCalibrationIcon from '@mui/icons-material/CompassCalibration';
 
 function Navbar() {
     return (
@@ -10,7 +11,7 @@ function Navbar() {
                         <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Techs</span>
                     </a>
                     <div className="flex items-center">
-                        <a href="#" className="text-sm text-blue-600 dark:text-blue-500 hover:underline">Login</a>
+                        <a href="#" className="text-sm text-blue-600 dark:text-blue-500 hover:underline"><CompassCalibrationIcon/></a>
                     </div>
                 </div>
             </nav>

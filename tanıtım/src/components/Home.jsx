@@ -1,4 +1,6 @@
 import {Link} from "react-router-dom";
+import CompassCalibrationIcon from '@mui/icons-material/CompassCalibration';
+
 
 function Home() {
 
@@ -11,7 +13,7 @@ function Home() {
                         <a href="#" className="bg-blue-100 text-blue-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-blue-400 mb-2">
                             Tech
                         </a>
-                        <h1 className="text-gray-900 dark:text-white text-3xl md:text-5xl font-extrabold mb-2">Shape Your Future with Technology</h1>
+                        <h1 className="text-gray-900 dark:text-white text-3xl md:text-5xl font-extrabold mb-2"><CompassCalibrationIcon/> Shape Your Future with Technology</h1>
                         <p className="text-lg font-normal text-gray-500 dark:text-gray-400 mb-6">We offer innovative and customizable technology solutions that propel you forward. Grow your business, boost productivity,
                             and stay ahead of the competition. We're here to turn your vision into reality.</p>
                         <Link to="/about" href="#" className="inline-flex justify-center items-center py-2.5 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
