@@ -7,7 +7,7 @@ function Navbar() {
         <div>
             <nav className="bg-white border-b border-gray-200 dark:bg-gray-900">
                 <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
-                    <a href="#" v="flex items-center">
+                    <a href="#" className="flex items-center">
                         <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Techs</span>
                     </a>
                     <div className="flex items-center">
