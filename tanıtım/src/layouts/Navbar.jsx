@@ -1,43 +1,85 @@
-import React from 'react';
-import {Link} from "react-router-dom";
-import CompassCalibrationIcon from '@mui/icons-material/CompassCalibration';
+import { Link } from "react-router-dom";
+import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturing';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
 
 function Navbar() {
     return (
         <div>
-            <nav className="bg-white border-b border-gray-200 dark:bg-gray-900">
-                <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
-                    <a href="#" className="flex items-center">
-                        <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Techs</span>
-                    </a>
-                    <div className="flex items-center">
-                        <a href="#" className="text-sm text-blue-600 dark:text-blue-500 hover:underline"><CompassCalibrationIcon/></a>
+            {/* Contact Section */}
+            <nav className="bg-gray-100 border-b border-gray-300">
+                <div className="flex justify-between items-center p-2 max-w-screen-xl mx-auto">
+                    <div className="text-black">
+                        <p>
+                            <strong>İrfan Vinç Kiralama - İletişim:</strong>{" "}
+                            <a
+                                href="tel:+905344666200"
+                                className="text-blue-500 hover:underline"
+                            >
+                                +90 534 466 6200
+                            </a>
+                        </p>
                     </div>
-                </div>
-            </nav>
-            <nav className="bg-gray-50 dark:bg-gray-700">
-                <div className="max-w-screen-xl mx-auto px-4 py-3">
-                    <div className="flex items-center">
-                        <ul className="flex flex-row font-medium mt-0 space-x-8 text-sm">
+                    <div>
+                        <ul className="flex items-center space-x-4 text-black gap-5">
                             <li>
-                                <Link to="/" href="#" className="text-gray-900 dark:text-white hover:underline" aria-current="page">Home</Link>
+                                <a
+                                    href="https://www.instagram.com/irfan_vinckiralama/"
+                                    className="text-gray-600 hover:text-blue-500 transition-all"
+                                >
+                                    <InstagramIcon fontSize="small" />
+                                </a>
                             </li>
                             <li>
-                                <Link to="/about" href="#" className="text-gray-900 dark:text-white hover:underline">About</Link>
-                            </li>
-                            <li>
-                                <Link to="/contact" href="#" className="text-gray-900 dark:text-white hover:underline">Contact</Link>
-                            </li>
-                            <li>
-                                <Link to="/products" href="#" className="text-gray-900 dark:text-white hover:underline">Products</Link>
+                                <a
+                                    href="https://www.facebook.com/people/Irfan-Ozturk/pfbid02UidTSWC3KueVkgsvugjjFaTAWmDANkkBJXMbRAJ8nbFh5F1Ez2pZ7j8R73uK9L7l/?ref=xav_ig_profile_web"
+                                    className="text-gray-600 hover:text-blue-500 transition-all"
+                                >
+                                    <FacebookIcon fontSize="small" />
+                                </a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
-        </div>
 
-);
+            {/* Main Branding Navbar */}
+            <nav className="bg-blue-600 border-b border-blue-700">
+                <div className="flex justify-between items-center max-w-screen-xl mx-auto p-4">
+                    <a href="#" className="flex items-center">
+                        <span className="text-2xl font-bold text-white hover:text-gray-200 transition-all">
+                            İrfan Vinç Kiralama
+                        </span>
+                    </a>
+                    <div className="flex items-center">
+                        <a href="#" className="text-white text-lg hover:text-gray-200 transition-all">
+                            <PrecisionManufacturingIcon />
+                        </a>
+                    </div>
+                </div>
+            </nav>
+
+            {/* Navigation Links */}
+            <nav className="bg-gray-100">
+                <div className="max-w-screen-xl mx-auto px-4 py-3">
+                    <ul className="flex space-x-8 font-medium text-sm">
+                        <li>
+                            <Link to="/" className="text-gray-900 hover:text-blue-500 transition-all" aria-current="page">Ana Sayfa</Link>
+                        </li>
+                        <li>
+                            <Link to="/about" className="text-gray-900 hover:text-blue-500 transition-all">Hakkımızda</Link>
+                        </li>
+                        <li>
+                            <Link to="/contact" className="text-gray-900 hover:text-blue-500 transition-all">İletişim</Link>
+                        </li>
+                        <li>
+                            <Link to="/products" className="text-gray-900 hover:text-blue-500 transition-all">Hizmetlerimiz</Link>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    );
 }
 
 export default Navbar;

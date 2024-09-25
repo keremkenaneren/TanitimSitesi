@@ -1,35 +1,72 @@
-import community2 from "../assets/community2.jpg";
-import CompassCalibrationIcon from '@mui/icons-material/CompassCalibration';
-
+import havalıfoto from "../assets/irfanmakina/havalifoto.jpg";
+import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturing';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 function Contact() {
-
     return (
-        <section className="bg-white dark:bg-gray-900">
-            <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 flex items-center justify-center lg:justify-start">
-                <div className="lg:flex">
+        <section className="bg-white">
+            <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16">
+                <div className="lg:flex items-center justify-center lg:justify-start">
+                    {/* Text Section */}
                     <div className="lg:w-1/2">
-                        <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white"><CompassCalibrationIcon/> Contact Us - Techs</h1>
-                        <form className="mr-4">
-                            <div className="relative z-0  mb-6 group">
-                                <input type="text" name="floating_email" id="floating_email" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-                                <label htmlFor="floating_email" className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Your name & surname</label>
+                        <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl flex items-center">
+                            <PrecisionManufacturingIcon className="mr-2" /> Bizimle İletişime Geçin
+                        </h1>
+                        <p className="text-lg font-normal text-gray-500 lg:text-xl mb-6">
+                            İrfan Vinç Kiralama olarak vinç kiralama ihtiyaçlarınızı karşılamak için buradayız. Sorularınız, talepleriniz veya herhangi bir konuda bizimle iletişime geçmekten çekinmeyin. Size en hızlı şekilde yardımcı olmak için buradayız.
+                        </p>
+                        {/* Contact Info Section */}
+                        <div className="bg-gray-50 border border-gray-200 rounded-lg p-8 mb-8 shadow-md">
+                            <h2 className="text-2xl font-extrabold text-gray-900 mb-4">İletişim Bilgilerimiz</h2>
+                            <div className="text-lg text-gray-600 mb-4">
+                                <p><strong>Telefon:</strong> <a href="tel:+905344666200" className="text-blue-500 hover:underline">+90 534 466 62 00</a></p>
+                                <p><strong>E-posta:</strong> <a href="mailto:irfan1867@gmail.com" className="text-blue-500 hover:underline">irfan1867@gmail.com</a></p>
                             </div>
-                            <div className="relative z-0  mb-6 group">
-                                <input type="email" name="floating_password" id="floating_password" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-                                <label htmlFor="floating_password" className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Your e-mail</label>
-                            </div>
-                            <div className="relative z-0  mb-6 group">
-                                <input type="text" name="repeat_password" id="floating_repeat_password" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-                                <label htmlFor="floating_repeat_password" className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Your message</label>
-                            </div>
-
-                            <button type="submit" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Send</button>
-                        </form>
+                            <p className="text-lg text-gray-600">
+                                Daha fazla bilgi için bizi arayabilir veya e-posta gönderebilirsiniz. Size en iyi hizmeti sunmak için buradayız.
+                            </p>
+                        </div>
+                        {/* Social Media Links */}
+                        <div className="mb-8">
+                            <ul className="flex justify-center gap-5 p-4 bg-gray-50 border border-gray-200 rounded-lg shadow-md">
+                                <li className="bg-[#E1306C] p-4 rounded-full">
+                                    <a
+                                        href="https://www.instagram.com/irfan_vinckiralama/"
+                                        className="text-white hover:underline"
+                                    >
+                                        <InstagramIcon fontSize="large" />
+                                    </a>
+                                </li>
+                                <li className="bg-[#1877F2] p-4 rounded-full">
+                                    <a
+                                        href="https://www.facebook.com/people/Irfan-Ozturk/pfbid02UidTSWC3KueVkgsvugjjFaTAWmDANkkBJXMbRAJ8nbFh5F1Ez2pZ7j8R73uK9L7l/?ref=xav_ig_profile_web"
+                                        className="text-white hover:underline"
+                                    >
+                                        <FacebookIcon fontSize="large" />
+                                    </a>
+                                </li>
+                                <li className="bg-[#25D366] p-4 rounded-full">
+                                    <a
+                                        href="https://wa.me/+905344666200"
+                                        className="text-white hover:underline"
+                                    >
+                                        <WhatsAppIcon fontSize="large" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div className="lg:w-1/2 pr-6">
+
+                    {/* Image Section */}
+                    <div className="lg:w-1/2 lg:pl-8">
                         <div className="text-center">
-                            <img className="mx-auto p-4 lg:mx-0 rounded opacity-75 hover:opacity-100 transition" src={community2} alt="community" />
+                            <img
+                                className="mx-auto p-4 lg:mx-0 rounded-lg shadow-lg transition"
+                                src={havalıfoto}
+                                alt="İrfan Vinç Kiralama Kartvizit"
+                            />
                         </div>
                     </div>
                 </div>
@@ -38,4 +75,4 @@ function Contact() {
     );
 }
 
-export default Contact ;
+export default Contact;

@@ -1,39 +1,42 @@
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
-import TwitterIcon from '@mui/icons-material/Twitter';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 function Footer() {
-
     return (
-        <div>
-            <footer className="p-4 bg-white md:p-8 lg:p-10 dark:bg-gray-800">
-                <div className="mx-auto max-w-screen-xl text-center">
-                    <a href="#" className="flex justify-center items-center text-2xl font-semibold text-gray-900 dark:text-white">
-                        Techs
-                    </a>
-                    <br/>
-                    <ul className="flex flex-wrap justify-center items-center mb-6 text-gray-900 dark:text-white">
-                        <li>
-                            <a href="#" className="mr-4 hover:underline md:mr-6 "><GitHubIcon/></a>
-                        </li>
-                        <li>
-                            <a href="#" className="mr-4 hover:underline md:mr-6"><LinkedInIcon/></a>
-                        </li>
-                        <li>
-                            <a href="#" className="mr-4 hover:underline md:mr-6 "><InstagramIcon/></a>
-                        </li>
-                        <li>
-                            <a href="#" className="mr-4 hover:underline md:mr-6 "><TwitterIcon/></a>
-                        </li>
+        <footer className="p-4 bg-blue-500 md:p-8 lg:p-10">
+            <div className="mx-auto max-w-screen-xl text-center">
+                {/* Brand Name */}
+                <a href="#" className="flex justify-center items-center text-2xl font-semibold text-white mb-4">
+                    İrfan Vinç Kiralama
+                </a>
 
-                    </ul>
-                    <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© <a href="#" className="hover:underline">Techs™</a>. All Rights Reserved.</span>
-                </div>
-            </footer>
+                {/* Social Media Icons */}
+                <ul className="flex justify-center items-center mb-6 space-x-4">
+                    <li>
+                        <a href="https://www.instagram.com/irfan_vinckiralama/" className="text-white hover:text-yellow-300 transition">
+                            <InstagramIcon fontSize="large" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/people/Irfan-Ozturk/pfbid02UidTSWC3KueVkgsvugjjFaTAWmDANkkBJXMbRAJ8nbFh5F1Ez2pZ7j8R73uK9L7l/?ref=xav_ig_profile_web" className="text-white hover:text-yellow-300 transition">
+                            <FacebookIcon fontSize="large" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://wa.me/+905344666200" className="text-white hover:text-yellow-300 transition">
+                            <WhatsAppIcon fontSize="large" />
+                        </a>
+                    </li>
+                </ul>
 
-        </div>
+                {/* Copyright Text */}
+                <span className="text-sm text-white sm:text-center">
+                    © <a href="#" className="hover:underline">İrfan Vinç Kiralama™</a>. Her hakkı saklıdır.
+                </span>
+            </div>
+        </footer>
     );
 }
 
-export default Footer ;
+export default Footer;
